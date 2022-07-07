@@ -1,0 +1,52 @@
+main {
+  background: rgb(27, 25, 25, 1);
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background: #fff;
+  height: 50vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 2vw;
+}
+
+form a {
+  font-weight: bolder;
+  color: inherit;
+}
+
+.title__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.access__container {
+  border-top: 1px dotted rgb(210, 210, 210, 1);
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.access__container input {
+  width: 100%;
+  border: 1px solid rgb(210, 210, 210, 1);
+  padding: 10px;
+}
+
+.access__container button {
+  width: 100%;
+  padding: 10px;
+  background: rgb(27, 25, 25, 1);
+  color: rgb(255, 255, 255);
+}
