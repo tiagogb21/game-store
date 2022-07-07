@@ -1,1 +1,12 @@
-
+<main>
+  <section></section>
+  <section class="box__container">
+    <article class="item__box" *ngFor="let item of products">
+      <img src="{{ item.photos[0].url }}" alt="" />
+      <p>{{ item.title }}</p>
+    </article>
+  </section>
+  <section>
+    <button>view more products</button>
+  </section>
+</main>
