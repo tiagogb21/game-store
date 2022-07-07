@@ -28,7 +28,6 @@ header {
 
 .search__container input {
   border: none;
-  color: #f5f5f5;
   font-size: 1.5vw;
 }
 
@@ -46,4 +45,8 @@ header {
   width: 4vw;
   background: #fff;
   border-radius: 50%;
+}
+
+.search__container > input:focus {
+  outline-width: 0;
 }
