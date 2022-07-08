@@ -1,12 +1,18 @@
 <main>
-  <section></section>
+  <section>
+    <img class="carroussel" src="{{ teste.photos[0].url }}" alt="" />
+    <button (click)="increase()">+</button>
+    <button (click)="decrease()">-</button>
+  </section>
   <section class="box__container">
     <article class="item__box" *ngFor="let item of products">
       <img src="{{ item.photos[0].url }}" alt="" />
       <p>{{ item.title }}</p>
+      <p>{{ item.mediumPrice | currency }}</p>
+      <article class="nota"><p>x/10</p></article>
     </article>
   </section>
-  <section>
+  <section class="button__container">
     <button>view more products</button>
   </section>
 </main>

@@ -1,18 +1,27 @@
 main {
-  width: 100vw;
+  width: 99vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: rgb(27, 25, 25, 1);
+  padding: 3vw 3vw 0 3vw;
+}
+
+.carroussel {
+  height: 60vh;
+  width: 93vw;
+  margin-bottom: 3vw;
+  object-fit: fill;
 }
 
 .box__container {
   width: 100vw;
-  height: 50vh;
-  padding: 0 20vw;
+  height: 150vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
-  background: rgb(27, 25, 25, 1);
+  gap: 1vw;
+  padding: 0 3vw;
 }
 
 .item__box {
@@ -24,15 +33,38 @@ main {
 }
 
 .item__box img {
-  width: 10vw;
+  max-width: 100%;
+  height: 24vw;
+  width: 21vw;
+  object-fit: fill;
+  margin: 3vw 0;
+}
+
+.nota {
+  background: rgb(249, 68, 67, 1);
+  border-radius: 999px;
+  padding: 0 1vw;
 }
 
 .button__container {
   width: 100vw;
+  height: 20vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .button__container button {
-  background: ;
+  background: rgb(249, 68, 67, 1);
+  color: #fff;
+  padding: 1vw;
+  border: none;
+}
+
+.button__container button:hover {
+  cursor: pointer;
+}
+
+.none {
+  display: none;
 }
