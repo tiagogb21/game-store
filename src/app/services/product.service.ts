@@ -1,14 +1,16 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+
+import { SERVER_URL } from '../data/data';
+
 @Injectable({
   providedIn: 'root',
 })
 export class ProductService {
-  SERVER_URL = 'https://api-labs.tindin.com.br/games';
-
   constructor(private http: HttpClient) {}
 
-  public getProducts() {
-    return this.http.get(`${this.SERVER_URL}`);
+  public async getProducts() {
+    const getData = await this.http.get(`${SERVER_URL}`);
+    return getData;
   }
 }

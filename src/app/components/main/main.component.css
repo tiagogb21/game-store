@@ -30,6 +30,8 @@ main {
   align-items: center;
   justify-content: center;
   color: #fff;
+  border: none;
+  background: rgb(27, 25, 25, 1);
 }
 
 .item__box img {

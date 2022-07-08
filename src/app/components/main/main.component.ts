@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from 'src/app/services/product.service';
+import { Store } from '@ngrx/store';
 
 @Component({
   selector: 'app-main',
@@ -30,13 +31,12 @@ export class MainComponent implements OnInit {
     console.log(this.chooseImage);
   }
 
-  ngOnInit(): void {
-    this.producService.getProducts().subscribe(
+  async ngOnInit(): Promise<void> {
+    (await this.producService.getProducts()).subscribe(
       async (data: any) => {
         this.products = await data['games'].slice(3, 11);
         this.carroussel = await data['games'].slice(0, 3);
         this.teste = this.carroussel[this.chooseImage % 3];
-        console.log(this.products);
       },
       (error) => {
         console.log(error);
